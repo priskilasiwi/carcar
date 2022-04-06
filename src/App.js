@@ -1,17 +1,13 @@
 import './App.css';
-import Navbar from "./components/Navbar";
+import Navbars from "./components/Navbars";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Faq from './components/Pages/Faq';
+import Menu from "./components/Menu"
 
 function App() {
   return (
     <>
-     <Router>
-       <Navbar />
-     <Routes>
-       <Route path="/Faq" component={<Faq />} />
-     </Routes>
-     </Router>
+       <Navbars />
+       <Menu />
     </>
   );
 }

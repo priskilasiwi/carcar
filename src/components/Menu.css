@@ -1,0 +1,40 @@
+.menu {
+    background-color: #F1F3FF;
+    position: relative;
+    width: 1440px;
+    height: 500px;
+    left: 0px;
+    top: 0px;
+}
+
+.heading{
+    margin-top: 120px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+
+}
+
+.paragraf{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    width: 468px;
+    text-align:justify;
+}
+
+.img-1 {
+    position: relative;
+    margin-top: 35%;
+    margin-left: 35px;
+}
+
+.img-2 {
+    position: absolute;
+    margin-bottom: 100px;
+    
+}
