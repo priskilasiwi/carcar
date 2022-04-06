@@ -9,7 +9,7 @@ function App() {
      <Router>
        <Navbar />
      <Routes>
-       <Route path="/Faq" component={Faq} />
+       <Route path="/Faq" component={<Faq />} />
      </Routes>
      </Router>
     </>

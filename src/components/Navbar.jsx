@@ -1,6 +1,8 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
+import logo from "../images/logo.svg"
+import { Button } from 'react-bootstrap';
 
 const Navbar = () =>
 {
@@ -10,29 +12,26 @@ const Navbar = () =>
         <nav className="navbar">
             <div className="nav-container">
                 <NavLink to="/" className="nav-logo">
-                    Ini Logo
+                    <img src={logo} className="img-logo" />
                 </NavLink>
 
                 <ul className="nav-menu">
                     <li className= "nav-item">
-                        <NavLink to="/ourservices" className="nav-links">
-                            Our Services
-                        </NavLink>
+                        Our Services
                     </li>
                     <li className= "nav-item">
-                        <NavLink to="/whyus" className="nav-links">
-                            Why Us
-                        </NavLink>
+                        Why Us
                     </li>
                     <li className= "nav-item">
-                        <NavLink to="/testimonial" className="nav-links">
-                            Testimonial 
-                        </NavLink>
+                        Testimonial
                     </li>
                     <li className= "nav-item">
                         <NavLink to="/Faq" className="nav-links">
                             FAQ
                         </NavLink>
+                    </li>
+                    <li className ="nav-item">
+                        <Button className="btn">Register</Button>
                     </li>
                 </ul>
 

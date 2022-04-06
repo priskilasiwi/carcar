@@ -1,6 +1,6 @@
 .navbar{
-    background-color: red;
-    height: 80px;
+    background-color: #F1F3FF;
+    height: 60px;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -14,9 +14,11 @@
     display: flex;
     justify-content: center;
     align-items:center;
-    width:100px;
+    width: 900px;
     height:80px;
     max-width: 1500px;
+    justify-content: space-between;
+    
 }
 
 .nav-logo{
@@ -26,12 +28,14 @@
     text-decoration: none;
     font-size: 2rem;
     flex-grow:1;
+    
+    
 }
 
 .nav-menu{
     display: flex;
     list-style: none;
-    text-align: center;
+    text-align: right;
     margin-right: 2rem;
 
 }
@@ -43,6 +47,12 @@
 }
 
 .nav-item{
-    line-height: 40px;
+    line-height: 15px;
     margin-right: 1rem;
+}
+
+.btn-item{
+    line-height: 15px;
+    margin-right: 1rem;
+    background-color: aquamarine;
 }
