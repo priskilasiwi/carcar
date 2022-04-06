@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Button } from 'react-bootstrap';
 import "./Menu.css"
 
 const Menu = () => {
@@ -10,6 +10,7 @@ const Menu = () => {
                 <div className="p-2">
                 <h1 className="heading">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
                 <p className="paragraf">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+                <Button className="button-mulai">Mulai Sewa Mobil</Button>
                 </div>
                 <Container>
                     <img className= "img-1" src="./images/bg.png" />
