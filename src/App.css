@@ -5,6 +5,11 @@
 
 body {
   background-color:#F1F3FF;
+  font-family:"Helvetica";
+}
+
+p{
+  margin-bottom: 0 !important;
 }
 
 

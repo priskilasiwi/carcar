@@ -1,0 +1,45 @@
+.card-detail {
+    position: absolute;
+    width: 550px;
+    height: 618px;
+    top: 300px;
+    left: 170px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+.text-paket {
+    width: 557px;
+    height: 75px;
+    left: 223px;
+    top: 600px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 175%;
+    color: #8A8A8A;
+}
+
+.detail-mobil {
+    position: relative;
+    width: 405px;
+    height: 435px;
+    left: 660px;
+    top: 27px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+.button-bayar {
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    margin-top: 20px;
+    /* Primary/LimeGreen/04 */
+
+    background: #5CB85F;
+    border-radius: 2px;
+}

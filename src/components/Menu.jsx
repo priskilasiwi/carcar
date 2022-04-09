@@ -13,12 +13,9 @@ const Menu = () => {
                 <Button className="button-mulai">Mulai Sewa Mobil</Button>
                 </div>
                 <Container>
-                    <img className= "img-1" src="./images/bg.png" />
-                    <img  className= "img-2" src="./images/Mercedes Car EQC 300kW Edition - 900x598 1.png" />
+                    <img className= "img-1" src="./images/img_car.png" />
                 </Container>
             </Container>
-            
-
         </Container>
         </>
     )

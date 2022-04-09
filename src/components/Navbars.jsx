@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, NavDropdown, Container, Nav, Form, Button, NavLink } from 'react-bootstrap';
+import { Navbar, Container, Nav, Button } from 'react-bootstrap';
 import "./Navbar.css";
 
 
@@ -10,7 +10,7 @@ const Navbars = () => {
       <Container>
         <Navbar.Brand>
           <img 
-          src="./images/logo.svg"/>
+          src="/images/logo.svg"/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

@@ -1,0 +1,61 @@
+.box {
+    background-color: #F1F3FF;
+    height: 206px;
+}
+
+.kotak-2 {
+    position: absolute;
+    width: 1047px;
+    height: 142px;
+    left: 150px;
+    top: 195px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+.h5 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.btn-edit {
+    position: absolute;
+    background: #FFFFFF;
+    border: 1px solid #0D28A6;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.card {
+    padding: 24px;
+    position: static;
+    width: 333px;
+    height: 586px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    margin-top: 100px;
+}
+
+.content-card{
+    justify-content: space-between;
+}
+
+.text{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.bg-green{
+    background-color: #5CB85F;
+    border:#5CB85F;
+}

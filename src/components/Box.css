@@ -1,0 +1,78 @@
+.kotak {
+    position: absolute;
+    width: 1047px;
+    height: 106px;
+    left: 196px;
+    top: 458px;
+    margin-top: 45px;
+    background: hsl(0, 0%, 100%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+.row {
+    align-items: baseline;
+}
+.subheading-1 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 10px;
+    color: #3C3C3C;
+}
+
+.btn-drop {
+    padding: 9px 12px;
+    position: static;
+    width: 210.75px;
+    height: 36px;
+    left: 0px;
+    background: #FFFFFF;
+    border: 1px solid #D0D0D0;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.tanggal {
+    background: #FFFFFF;
+    position: static;
+    width: 210.75px;
+    height: 36px;
+    left: 0px;
+    top: px;
+    border: 1px solid #D0D0D0;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.button {
+    background: #5CB85F !important;
+    border-radius: 2px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-top: 40px;
+    border:none;
+    outline: none;
+    border-color: #5CB85F !important;
+}
+
+.penumpang{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 9px 12px;
+    position: static;
+    width: 210.75px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #D0D0D0;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
