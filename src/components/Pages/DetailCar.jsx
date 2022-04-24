@@ -83,13 +83,13 @@ const DetailCar = () => {
                             <h5>{car.name}</h5>
                             <div className='d-flex align-items-center'>
                                 <img src='/images/fi_users.svg' />
-                                <p className="px-2 my-2">4 Orang</p>
+                                <p className="px-2 text-car">4 Orang</p>
                                 <img src='/images/fi_settings.svg' />
-                                <p className="px-2 my-2">Manual</p>
+                                <p className="px-2 text-car">Manual</p>
                                 <img src='/images/fi_calendar.svg' />
-                                <p className="px-2 my-2">Tahun 2020</p>
+                                <p className="px-2 text-car">Tahun 2020</p>
                             </div>
-                            <div className="d-flex justify-content-between">
+                            <div className="d-flex justify-content-between my-3">
                                 <p>Total</p>
                                 <p><b>Rp. {car.price}</b></p>
                             </div>

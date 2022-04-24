@@ -50,12 +50,11 @@
 .text{
     font-family: 'Helvetica';
     font-style: normal;
-    font-weight: 300;
     font-size: 14px;
     line-height: 20px;
 }
 
 .bg-green{
-    background-color: #5CB85F;
+    background-color: #5CB85F !important;
     border-color: #5CB85F !important;
 }

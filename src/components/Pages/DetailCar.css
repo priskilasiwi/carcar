@@ -42,3 +42,9 @@
     border-radius: 2px;
     border-color: #5CB85F !important;
 }
+
+.text-car{
+    color: #8a8a8a;
+    font-family: Helvetica;
+    font-size: 10px;
+}

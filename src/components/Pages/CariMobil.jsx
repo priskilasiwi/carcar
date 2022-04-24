@@ -65,8 +65,8 @@ const CariMobil = () => {
                                     <Card className="card">
                                         <img src={car.image} alt="mobil" />
                                         <Card.Body>
-                                            <h6>{car.name}</h6>
-                                            <h5>Rp {car.price}/hari</h5>
+                                            <h5>{car.name}</h5>
+                                            <h6><b>Rp {car.price}/hari</b></h6>
                                             <p className="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis quaerat adipisci natus animi vel delectus saepe at harum accusamus quam provident quae, deserunt, ratione nobis placeat autem laborum quisquam quo.</p>
                                             <div className='d-flex align-items-center'>
                                                 <img src='./images/fi_users.svg' />
