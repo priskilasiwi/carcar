@@ -2,9 +2,17 @@ import React from 'react';
 import "./Box.css";
 import { Button, Form } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { carAction } from '../redux/carAction';
 
 const Box = () => {
     const navigation = useNavigate();
+    const dispatch = useDispatch();
+
+    const reqCar = () => {
+        dispatch(carAction())
+        navigation('/carimobil');
+    }
 
     return (
         <>
@@ -32,7 +40,7 @@ const Box = () => {
                         
                     </div>
                     <div className="col">
-                        <Button className="button" onClick={() => navigation ('/carimobil')}>Cari Mobil</Button>
+                        <Button className="button" onClick={reqCar}>Cari Mobil</Button>
                     </div>
                 </div>
             </Form>

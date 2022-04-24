@@ -5,21 +5,22 @@ import { Container, Form, Button, Card, Row, Col } from "react-bootstrap";
 import "./CariMobil.css";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { carAction } from '../../redux/carAction';
 
 const CariMobil = () => {
-    const [listCar, setListCar] = useState([]);
-
-    async function getDataCar() {
-        const { data } = await axios('https://rent-cars-api.herokuapp.com/admin/car');
-        console.log(data);
-        setListCar(data);
+    const navigation = useNavigate()
+    const dispatch = useDispatch();
+    
+    const reqdetail = (car) => {
+        dispatch(carAction())
+        navigation(`/detailcar/${car.id}`);
     }
 
-    useEffect(() => {
-        getDataCar();
-    }, []);
-
-    const navigate = useNavigate()
+    const { dataCar } = useSelector((globalStore) => globalStore.carReducer);
+    
+    
+    
     return (
         <>
             <Navbars />
@@ -53,12 +54,14 @@ const CariMobil = () => {
                     </div>
                 </Form>
             </Container>
+
+            
             <Container>
                 <Container fluid>
                     <Row className="content-card">
-                        {listCar.map((car) => {
+                        {dataCar?.map((car) => {
                             return (
-                                <Col key={car.id} className="g-col-4">
+                                <Col className="g-col-4">
                                     <Card className="card">
                                         <img src={car.image} alt="mobil" />
                                         <Card.Body>
@@ -75,10 +78,10 @@ const CariMobil = () => {
                                             </div>
                                             <div className='d-flex align-items-center'>
                                                 <img src='./images/fi_calendar.svg' />
-                                                <p className="px-2 my-2">Tahun 2020</p>
+                                                <p className="px-2 my-2">Tahun 2022</p>
                                             </div>
                                         </Card.Body>
-                                        <Button className="bg-green" onClick={() => navigate(`/detailcar/${car.id}`) }>Pilih Mobil</Button>
+                                        <Button className="bg-green" onClick={() => reqdetail(car)}>Pilih Mobil</Button>
                                     </Card>
                                 </Col>
                             )

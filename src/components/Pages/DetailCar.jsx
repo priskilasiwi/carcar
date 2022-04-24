@@ -4,21 +4,15 @@ import "./DetailCar.css";
 import axios from 'axios';
 import { useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
+import { useSelector } from "react-redux";
+
 
 const DetailCar = () => {
-    const { id } = useParams();
-    const [dataDetailCar, setDataDetailCar] = useState({});
-  
-    const getData = async () => {
-      const { data } = await axios(
-        `https://rent-cars-api.herokuapp.com/admin/car/${id}`
-      );
-      setDataDetailCar(data);
-    };
-  
-    useEffect(() => {
-      getData();
-    });
+    const {id}  = useParams();
+
+    const { dataCar }  = useSelector((globalStore) => globalStore.carReducer);
+    const car = dataCar.find((el)=>el.id==id);
+
     return (
         <>
         <Navbars />
@@ -84,9 +78,9 @@ const DetailCar = () => {
                                 </ul>
                             </div>
                         </Card>
-                        <Card className="detail-mobil">
-                            <img src={dataDetailCar.image} alt="car" />
-                            <h5>{dataDetailCar.name}</h5>
+                        <Card key={car.id} className="detail-mobil">
+                            <img src={car.image} alt="car" />
+                            <h5>{car.name}</h5>
                             <div className='d-flex align-items-center'>
                                 <img src='/images/fi_users.svg' />
                                 <p className="px-2 my-2">4 Orang</p>
@@ -97,7 +91,7 @@ const DetailCar = () => {
                             </div>
                             <div className="d-flex justify-content-between">
                                 <p>Total</p>
-                                <p><b>Rp. {dataDetailCar.price}</b></p>
+                                <p><b>Rp. {car.price}</b></p>
                             </div>
                             <Button className="button-bayar"> Lanjutkan Pembayaran </Button>
 

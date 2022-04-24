@@ -57,5 +57,5 @@
 
 .bg-green{
     background-color: #5CB85F;
-    border:#5CB85F;
+    border-color: #5CB85F !important;
 }

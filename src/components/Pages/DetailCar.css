@@ -38,8 +38,7 @@
     align-items: center;
     padding: 8px 12px;
     margin-top: 20px;
-    /* Primary/LimeGreen/04 */
-
-    background: #5CB85F;
+    background: #5CB85F !important;
     border-radius: 2px;
+    border-color: #5CB85F !important;
 }
